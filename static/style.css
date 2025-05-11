@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    background-image: url("https://images.pexels.com/photos/1371527/pexels-photo-1371527.jpeg?cs=srgb&dl=pexels-rahul-pandit-1371527.jpg&fm=jpg");
+  background-position: center;
+  background-size: cover;
+ min-height:700px;
+ padding-top: 80px;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: black;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+
+.navbar .logo span {
+  color: #c06b3e;
+}
+
+.navbar .menu-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #c06b3e;
+}
+.post{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width:70%;
+    padding:50px;
+    margin:50px auto;
+    border-radius:20px;
+    cursor:pointer;
+}

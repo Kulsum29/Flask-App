@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <a class="logo" href="#">My Blogs<span>.</span></a>
+  
+          <ul class="menu-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </nav> </header>
+        {%for post in blogposts %}
+        <div class="post">
+            
+        <h1>{{post.title}}</h1>
+        <p>{{post.content}}</p>
+        </div>
+        {% endfor %}
+     
+    
+</body>
+</html>
